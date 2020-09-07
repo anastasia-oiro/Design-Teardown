@@ -1,34 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 .body{
     margin: 0;
     padding: 0;
 }
-header{
+.navigation{
     display:flex;
     color: white;
     background: #d33a2c;
-     
-}
-.main-menu ul{
-    list-style-type: none;
-}
-.main-menu li{
-    text-decoration: none;
-    color: white;
-}
-.search input{
-    width: 250px;
-    padding: 4px;
-    border: 0;
-    color: white;
-  
+    justify-content: space-between;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+    height:100px;
     
 }
-.grid-container{
-    display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 800px 800px;
-    background: turquoise;
+.logo img{
+ height: 90px;
+     
 }
-.grid-item1{
-    background: #333;
+.menu-section ul{
+    list-style-type: none; 
+    
+}
+.menu-section li{
+    color: white;
+    display: inline;
+    text-decoration: none;
+
+}
+.section-menu__search input{
+  margin: 10px;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  width: 300px;
+  font-family: 'Kaushan Script', cursive;
+ }
+ 
+ .grid-container{
+     display: grid;
+     grid-template-rows:500px 500px;
+     grid-template-columns:auto auto;
+  }
+ .grid-box1{
+    background-color: #bc3428;
+    
+ }
+ .section-header__author figure{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+  }
+ .img-box{
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    margin-right: 20px;
+    border-radius: 10px;
+    rotate: -20grad;
+}
+.img-box:hover{transform:scale(1,4);}
+.heading-secondary{
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    font-size: 40px; 
+    
+}
+.section-header__comments{
+    font-size: 20px;
+}
+.section-header__hashtag li{
+    display: inline;
+    text-decoration: none;
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    font-size: 20px;
+}
+.section-header__hashtag ul{
+    list-style-type: none;  
+}
+ .grid-box2{
+     background-color: #c7372a;
+ }
+ .grid-box3{
+     background-color:  #b13125;
+ }
+ .grid-box4{
+    background-color:  #bc3428;
+}
+.main-article__1{
+    background-color: yellow;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    margin-right: 20px;
+    height: 350px;
+  
+}
+.article-item__text{
+    font-size: 20px;
+    text-align: justify;
+}
+.article-itemsponsor{
+    background-color: turquoise;
 }

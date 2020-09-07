@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smashing Magazine</title>
-    <href src="magstyle.css" rel="stylesheet">
+    <link rel = "stylesheet" href="magstyle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
 <body>
-    <header>
+    <div class="navigation">
         <div class="logo">
           <img src="images/logo.png" alt="logo" />
         </div>
         <div class="menu-section">
         <ul>
-          <li><a class="section-menu__nav--links" href="#">Articles</a></li>
-          <li><a class="section-menu__nav--links" href="#">Guides</a></li>
-          <li><a class="section-menu__nav--links" href="#">Books</a></li>
-          <li><a class="section-menu__nav--links" href="#">Events</a></li>
-          <li><a class="section-menu__nav--links" href="#">Membership</a></li>
-          <li><a class="section-menu__nav--links" href="#">Jobs</a></li>
-          <li><a class="section-menu__nav--links active" href="#">
+          <li><a  href="#">Articles</a></li>
+          <li><a  href="#">Guides</a></li>
+          <li><a  href="#">Books</a></li>
+          <li><a  href="#">Events</a></li>
+          <li><a href="#">Membership</a></li>
+          <li><a  href="#">Jobs</a></li>
+          <li><button><a class="section-menu__nav--links active" href="#">
               More
-              <img src="assets/images/menu-cat.svg" alt="cat" class="menu-cat"/></a></li>
+              </a></button></li>
         </ul>
     </div>
 
@@ -29,7 +30,7 @@
           <input type="search" placeholder="Search articles" class="section-menu__input" />
         </form>
       
-    </header>
+      </div>
   
       <header class="section-header">
         <h1 class="heading-primary">
@@ -43,22 +44,54 @@
           <p class="switch-color--text">Seriously, red?</p>
         </div>
   
-        <div class="section-header__grid">
-          <div class="section-header__grid-box">
+        <div class="grid-container">
+          <div class="grid-box1">
             <div class="section-header__author">
+              <figure>
               <img
-                class="rotate-up"
-                src="assets/images/paulboag-200x200.jpg"
+                class="img-box"
+                src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6e4dbe64-18f6-45e0-8732-0c39078b3168/abdulazeez-adeshina-200x200.jpeg"
                 alt="paul boag"
               />
-              <h3>Paul Boag <span>wrote</span></h3>
+              <figcaption><h3>Abdulazeez Adeshina <span>wrote</span></h3></figcaption>
+            </figure>
             </div>
             <h2 class="heading-secondary">
-              How to convince others not to use dark patterns
+              Building React Apps with story books
               <span class="section-header__comments">
-                <i class="fas fa-comment-alt"></i> 1 comment</span
-              >
-            </h2>
+                <i class="far fa-comment-alt"></i> 1 comment</span>
+              </h2>
+  
+            <ul class="section-header__hashtag">
+              <li>
+                # <a href="#">Ethics<sup>17</sup></a>
+              </li>
+              <li>
+                # <a href="#">Design Patterns<sup>47</sup></a>
+              </li>
+              <li>
+                # <a href="#">User Experience<sup>296</sup></a>
+              </li>
+            </ul>
+  
+            <a href="#" class="section-header__arrow">&#8594;</a>
+          </div>
+          <div class="grid-box2">
+            <div class="section-header__author">
+              <figure>
+              <img
+                class="img-box"
+                src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6e4dbe64-18f6-45e0-8732-0c39078b3168/abdulazeez-adeshina-200x200.jpeg"
+                alt="paul boag"
+              />
+              <figcaption><h3>Abdulazeez Adeshina <span>wrote</span></h3></figcaption>
+            </figure>
+            </div>
+            <h2 class="heading-secondary">
+              Building React Apps with story books
+              <span class="section-header__comments">
+                <i class="far fa-comment-alt"></i> 1 comment</span>
+              </h2>
   
             <ul class="section-header__hashtag">
               <li>
@@ -75,45 +108,17 @@
             <a href="#" class="section-header__arrow">&#8594;</a>
           </div>
   
-          <div class="section-header__grid-box">
+     
+          <div class="grid-box3">
             <div class="section-header__author">
+              <figure>
               <img
-                class="rotate-up"
-                src="assets/images/vitaly-friedman.jpg"
-                alt="Vitaly Friedman"
+                class="img-box"
+                src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6e4dbe64-18f6-45e0-8732-0c39078b3168/abdulazeez-adeshina-200x200.jpeg"
+                alt="paul boag"
               />
-              <h3>Vitaly Friedman <span>wrote</span></h3>
-            </div>
-            <h2 class="heading-secondary">
-              Meet “Click!”: Encourage Clicks Without Shady Tricks
-              <span class="section-header__comments">
-                <i class="fas fa-comment-alt"></i> 1 comment</span
-              >
-            </h2>
-  
-            <ul class="section-header__hashtag">
-              <li>
-                # <a href="#">Business<sup>299</sup></a>
-              </li>
-              <li>
-                # <a href="#">Usability<sup>147</sup></a>
-              </li>
-              <li>
-                # <a href="#">Smashing Books<sup>39</sup></a>
-              </li>
-            </ul>
-  
-            <a href="#" class="section-header__arrow">&#8594;</a>
-          </div>
-  
-          <div class="section-header__grid-box">
-            <div class="section-header__author">
-              <img
-                class="rotate-up"
-                src="assets/images/thomas-bohm-200x200.png"
-                alt="Thomas Bohm"
-              />
-              <h3>Thomas Bohm <span>wrote</span></h3>
+              <figcaption><h3>Abdulazeez Adeshina <span>wrote</span></h3></figcaption>
+            </figure>
             </div>
             <h2 class="heading-secondary">
               Micro-Typography: How To Space And Kern Punctuation Marks And Other
@@ -138,14 +143,16 @@
             <a href="#" class="section-header__arrow">&#8594;</a>
           </div>
   
-          <div class="section-header__grid-box">
+          <div class="grid-box4">
             <div class="section-header__author">
+              <figure>
               <img
-                class="rotate-up"
-                src="assets/images/blessing-krofegha-200x200.jpg"
-                alt="Blessing "
+                class="img-box"
+                src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6e4dbe64-18f6-45e0-8732-0c39078b3168/abdulazeez-adeshina-200x200.jpeg"
+                alt="paul boag"
               />
-              <h3>Blessing Krofegha <span>wrote</span></h3>
+              <figcaption><h3>Abdulazeez Adeshina <span>wrote</span></h3></figcaption>
+            </figure>
             </div>
             <h2 class="heading-secondary">
               Setting TypeScript For Modern React Projects Using Webpack And Babel
@@ -222,8 +229,9 @@
             </p>
             <a class="article-item__arrow" href="#">&#8594; </a>
           </div>
+        </div>
   
-          <div class="article-item sponsor">
+          <div class="article-itemcsponsor">
             <span class="sponsor__span">Our friends and supporters &#8595; </span>
             <a href="#">
               <div class="supporters-box">
@@ -236,7 +244,7 @@
               </div>
             </a>
           </div>
-        </div>
+        
   
         <div class="main-article__2">
           <div class="article-item article-features">
